@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: light;
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	color: #20312d;
+	background: #f3f6f1;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	padding: 48px 20px;
+	background-image: linear-gradient(135deg, #f3f6f1 0%, #e5eee7 100%);
+}
+
+.page {
+	width: min(100%, 860px);
+	margin: 0 auto;
+}
+
+.page-header {
+	margin-bottom: 28px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #cad8cf;
+}
+
+.eyebrow {
+	margin: 0 0 10px;
+	color: #b14d35;
+	font-size: 0.78rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	max-width: 660px;
+	margin-bottom: 12px;
+	color: #183d35;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(2rem, 6vw, 3.3rem);
+	line-height: 1.08;
+}
+
+.intro {
+	max-width: 620px;
+	margin-bottom: 0;
+	color: #52655e;
+	line-height: 1.7;
+}
+
+.columns::after {
+	display: table;
+	clear: both;
+	content: "";
+}
+
+.column {
+	width: 50%;
+	min-height: 164px;
+	padding: 22px;
+}
+
+.column h2,
+.overflow-section h2 {
+	margin-bottom: 10px;
+	color: #183d35;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.35rem;
+}
+
+.column p {
+	margin-bottom: 0;
+	line-height: 1.65;
+}
+
+.left-column {
+	float: left;
+	background: #d9e9df;
+}
+
+.right-column {
+	float: right;
+	background: #f1d9c9;
+}
+
+.overflow-section {
+	clear: both;
+	padding-top: 28px;
+}
+
+.overflow-box {
+	width: min(100%, 460px);
+	height: 170px;
+	overflow: auto;
+	padding: 16px 18px;
+	border-left: 4px solid #b14d35;
+	background: #fffdf8;
+	color: #42564f;
+	line-height: 1.65;
+	scrollbar-color: #b14d35 #f1e8df;
+}
+
+.overflow-box p:last-child {
+	margin-bottom: 0;
+}
+
+.overflow-box:focus-visible {
+	outline: 3px solid #2f7765;
+	outline-offset: 3px;
+}
+
+code {
+	padding: 2px 5px;
+	background: rgb(32 49 45 / 7%);
+	font-family: Consolas, "Courier New", monospace;
+	font-size: 0.9em;
+}
+
+.page-footer {
+	margin-top: 26px;
+	padding-top: 14px;
+	border-top: 1px solid #cad8cf;
+	color: #61736b;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+	body {
+		padding: 32px 16px;
+	}
+
+	.column {
+		float: none;
+		width: 100%;
+		min-height: 0;
+	}
+
+	.right-column {
+		margin-top: 8px;
+	}
+}

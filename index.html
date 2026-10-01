@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ví dụ bố cục hai cột bằng float và xử lý nội dung dài bằng overflow.">
+	<title>Bố cục trang với float và overflow</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<header class="page-header">
+			<p class="eyebrow">Bài tập CSS</p>
+			<h1>Bố cục trang với float và overflow</h1>
+			<p class="intro">Thực hành sắp xếp hai cột và kiểm soát nội dung dài bằng các thuộc tính CSS cơ bản.</p>
+		</header>
+
+		<section class="columns" aria-label="Bố cục hai cột">
+			<article class="column left-column">
+				<h2>Cột bên trái</h2>
+				<p>Đây là nội dung của cột thứ nhất. Cột được căn về bên trái bằng thuộc tính <code>float: left</code>.</p>
+			</article>
+			<article class="column right-column">
+				<h2>Cột bên phải</h2>
+				<p>Đây là nội dung của cột thứ hai. Cột được căn về bên phải bằng thuộc tính <code>float: right</code>.</p>
+			</article>
+		</section>
+
+		<section class="overflow-section" aria-labelledby="overflow-title">
+			<h2 id="overflow-title">Nội dung có thể cuộn</h2>
+			<div class="overflow-box" tabindex="0" aria-label="Vùng nội dung dài có thanh cuộn">
+				<p>Khi nội dung dài hơn chiều cao của khung, thuộc tính <code>overflow: auto</code> sẽ hiển thị thanh cuộn để bạn đọc phần còn lại.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae neque sed justo consequat tincidunt. Donec feugiat, erat eget suscipit posuere, magna mi tincidunt nibh, vitae posuere lorem arcu a erat.</p>
+				<p>Praesent vulputate, ipsum in commodo tincidunt, mauris sapien faucibus lectus, a tincidunt erat dolor vitae nisi. Curabitur non ligula sit amet augue tempor consequat. Nulla facilisi.</p>
+				<p>Sed at lectus vel augue posuere tincidunt. Vivamus interdum, justo sed luctus gravida, ante odio tincidunt neque, sed volutpat ipsum eros quis erat. Nam euismod, sapien a feugiat ullamcorper, nisl urna blandit libero, vel aliquet velit lacus sed mi.</p>
+				<p>Phần nội dung tiếp tục ở đây để khung có thể cuộn. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+			</div>
+		</section>
+
+		<footer class="page-footer">Thực hành <code>float</code>, <code>clear</code> và <code>overflow</code></footer>
+	</main>
+</body>
+</html>
